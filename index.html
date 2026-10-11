@@ -85,7 +85,7 @@
   .eyebrow::before { content: ""; width: 36px; height: 2px; background: currentColor; }
   .dark .eyebrow { color: var(--gold); }
   .center .eyebrow { justify-content: center; }
-  .center .eyebrow::after { content: ""; width: 36px; height: 2px; background: currentColor; }
+  .center .eyebrow::after, .closing .eyebrow::after { content: ""; width: 36px; height: 2px; background: currentColor; }
   h2 {
     font-size: clamp(1.7rem, 5.2vw, 2.6rem);
     font-weight: 900;
@@ -165,12 +165,12 @@
   }
   .hero-visual { position: relative; display: flex; align-items: flex-end; justify-content: center; }
   .hero-visual .logo-card {
-    background: rgba(255,255,255,.96); border-radius: 18px; padding: 22px 26px;
-    flex: none; width: 280px; box-shadow: 0 24px 60px rgba(0,0,0,.35);
+    flex: none; width: 290px;
+    filter: drop-shadow(0 14px 30px rgba(0,0,0,.45));
     margin-bottom: 40px;
   }
   .hero-visual .machine {
-    flex: none; width: 160px; margin-left: -30px; position: relative;
+    flex: none; width: 150px; margin-left: 14px; position: relative;
     filter: drop-shadow(0 18px 30px rgba(0,0,0,.45));
   }
   .hero .area { font-size: 0.88rem; color: #b8c4da; margin-top: 22px; }
@@ -329,7 +329,7 @@
 
   /* 締め */
   .closing { text-align: center; }
-  .closing .logo { width: min(260px, 70%); margin: 0 auto 34px; background: #fff; border-radius: 14px; padding: 18px 22px; }
+  .closing .logo { width: min(300px, 72%); margin: 0 auto 34px; filter: drop-shadow(0 12px 26px rgba(0,0,0,.45)); }
   .closing h2 { margin-bottom: 18px; }
 
   footer { background: #0a1427; color: #8d9bb6; text-align: center; padding: 48px 24px 120px; font-size: 0.8rem; line-height: 1.9; }
@@ -348,7 +348,7 @@
   @media (max-width: 860px) {
     .hero-grid { grid-template-columns: 1fr; }
     .hero-visual { order: -1; justify-items: start; }
-    .hero-visual .logo-card { width: 220px; padding: 14px 18px; }
+    .hero-visual .logo-card { width: 240px; }
     .hero-visual .machine { display: none; }
     .two, .rounds { grid-template-columns: 1fr; }
     .reasons { grid-template-columns: 1fr; }
@@ -400,7 +400,7 @@
         <p class="area">千葉県成田市｜メディセル筋膜ケアのプライベートサロン</p>
       </div>
       <div class="hero-visual">
-        <div class="logo-card"><img src="images/logo.webp" alt="Body Care moco" width="640" height="599"></div>
+        <div class="logo-card"><img src="images/logo.webp" alt="Body Care moco" width="720" height="674"></div>
         <img class="machine" src="images/medicell.webp" alt="" width="434" height="800">
       </div>
     </div>
@@ -641,7 +641,7 @@
 <!-- 締め -->
 <section class="closing dark">
   <div class="wrap narrow">
-    <img class="logo" src="images/logo.webp" alt="Body Care moco" width="640" height="599" loading="lazy">
+    <img class="logo" src="images/logo.webp" alt="Body Care moco" width="720" height="674" loading="lazy">
     <p class="eyebrow" style="justify-content:center">BODY CARE MOCO</p>
     <h2>身体が軽くなると、<br><em>人生が動き出す。</em></h2>
     <p class="lead" style="margin-bottom:36px">その痛み、ひとりで抱えず、まずはお気軽にご相談ください。</p>
