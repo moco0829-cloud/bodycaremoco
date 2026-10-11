@@ -344,6 +344,10 @@
   .closing .logo { width: min(300px, 72%); margin: 0 auto 34px; filter: drop-shadow(0 12px 26px rgba(0,0,0,.45)); }
   .closing h2 { margin-bottom: 18px; }
 
+  /* SNS のアプリ内ブラウザで開かれたときだけ出す、LINE が開かないときの案内 */
+  .inapp-note { display: none; font-size: 0.82rem; line-height: 1.7; margin: 12px 0 0; color: #b8c4da; }
+  .inapp .inapp-note { display: block; }
+  #reserve .inapp-note { color: var(--ink-soft); text-align: center; }
   footer { background: #0a1427; color: #8d9bb6; text-align: center; padding: 48px 24px 120px; font-size: 0.8rem; line-height: 1.9; }
   footer .name { font-family: var(--latin); color: var(--gold); font-size: 1.4rem; letter-spacing: 0.08em; }
 
@@ -410,6 +414,7 @@
           <a class="btn btn-line" href="https://lin.ee/7jZraz0" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
           <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
         </div>
+        <p class="inapp-note">※ LINE が開かないときは、画面右上（または右下）の「…」から「ブラウザで開く」を選んでから、もう一度押してください。</p>
         <p class="area">千葉県成田市｜メディセル筋膜ケアのプライベートサロン</p>
       </div>
       <div class="hero-visual">
@@ -648,6 +653,7 @@
         <a class="btn btn-outline-dark" href="https://moco0829-cloud.github.io/salondemoco/yoyaku/" target="_blank" rel="noopener"><svg><use href="#cal-icon"/></svg>空き状況を見る</a>
         <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
       </div>
+      <p class="inapp-note">※ LINE が開かないときは、画面右上（または右下）の「…」から「ブラウザで開く」を選んでから、もう一度押してください。</p>
     </div>
   </div>
 </section>
@@ -663,6 +669,7 @@
       <a class="btn btn-gold" href="https://lin.ee/7jZraz0" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
       <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
     </div>
+    <p class="inapp-note">※ LINE が開かないときは、画面右上（または右下）の「…」から「ブラウザで開く」を選んでから、もう一度押してください。</p>
   </div>
 </section>
 
@@ -682,5 +689,9 @@
   <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
 </nav>
 
+<script>
+  // Instagram・Facebook・LINE などのアプリ内ブラウザで開かれたら、LINE が開かないときの案内を出す
+  if (/FBAN|FBAV|FB_IAB|Instagram|Line\//i.test(navigator.userAgent)) document.documentElement.classList.add("inapp");
+</script>
 </body>
 </html>
