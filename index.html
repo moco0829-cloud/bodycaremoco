@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Body Care moco｜成田市のメディセル筋膜ケア・ゴルフケア｜プライベートサロン</title>
+<meta name="description" content="千葉県成田市のメディセル筋膜ケアのプライベートサロン Body Care moco。肩こり・腰痛・膝の痛み・むくみなど、マッサージしてもすぐ戻る痛みに、本格筋膜ケアマシン Medicell HYBRID でしっかりアプローチ。ゴルフのラウンド前・ラウンド後のケアにも。男女OK・完全予約制。">
+<meta property="og:title" content="Body Care moco｜メディセル筋膜ケア・ゴルフケア">
+<meta property="og:description" content="その痛み、あきらめないで。身体が軽くなると人生が動き出す。成田市のメディセル筋膜ケアのプライベートサロン。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moco0829-cloud.github.io/bodycaremoco/">
+<meta property="og:image" content="https://moco0829-cloud.github.io/bodycaremoco/images/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://moco0829-cloud.github.io/bodycaremoco/">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Body Care moco",
+  "description": "成田市のメディセル筋膜ケアのプライベートサロン。ゴルフのラウンド前・ラウンド後のケアにも。",
+  "areaServed": "千葉県成田市",
+  "image": "https://moco0829-cloud.github.io/bodycaremoco/images/ogp.jpg",
+  "sameAs": ["https://www.instagram.com/bodycaremoco_narita/"]
+}
+</script>
+<style>
+  :root {
+    --navy: #0e1a33;
+    --navy-2: #16264a;
+    --navy-3: #1f3563;
+    --ink: #1b2a4a;
+    --ink-soft: #41587a;
+    --ice: #f3f8fd;
+    --blue: #2e6db4;
+    --blue-light: #6fa3e0;
+    --gold: #c9a24a;
+    --gold-light: #e8c877;
+    --sun: #e8b240;
+    --gothic: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    --latin: "Cinzel", "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ice);
+    color: var(--ink);
+    font-family: var(--gothic);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.95;
+    letter-spacing: 0.03em;
+    /* 日本語を言葉の区切りで折り返す */
+    word-break: auto-phrase;
+    text-wrap: pretty;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 980px; margin: 0 auto; padding-inline: 24px; }
+  .narrow { max-width: 760px; }
+  section { padding-block: 96px; position: relative; }
+  .center { text-align: center; }
+  .gold { color: var(--gold-light); }
+  .blue { color: var(--blue); }
+  strong { font-weight: 900; }
+
+  /* 紺色のセクション */
+  .dark { background: var(--navy); color: #e9eef7; }
+  .dark .lead, .golf .lead { color: #c7d2e6; }
+
+  /* 見出し */
+  .eyebrow {
+    font-family: var(--latin);
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    font-size: 0.86rem;
+    color: var(--blue);
+    margin: 0 0 10px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .eyebrow::before { content: ""; width: 36px; height: 2px; background: currentColor; }
+  .dark .eyebrow { color: var(--gold); }
+  .center .eyebrow { justify-content: center; }
+  .center .eyebrow::after { content: ""; width: 36px; height: 2px; background: currentColor; }
+  h2 {
+    font-size: clamp(1.7rem, 5.2vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.45;
+    margin: 0 0 28px;
+    letter-spacing: 0.02em;
+  }
+  h2 em { font-style: normal; color: var(--blue); }
+  .dark h2 em, .golf h2 em { color: var(--gold-light); }
+  .lead { font-size: 1.05rem; color: var(--ink-soft); margin: 0 0 1.4em; }
+  .prose p { margin: 0 0 1.4em; }
+  .prose p:last-child { margin-bottom: 0; }
+
+  /* ボタン */
+  .buttons { display: flex; flex-wrap: wrap; gap: 14px; }
+  .center .buttons { justify-content: center; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 16px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-line { background: #06c755; color: #fff; }
+  .btn-gold { background: linear-gradient(135deg, var(--gold-light), var(--gold)); color: var(--navy); }
+  .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
+  .btn-outline-dark { background: #fff; color: var(--ink); border: 1.5px solid #c9d6e8; }
+
+  /* ヒーロー */
+  .hero {
+    min-height: 100vh;
+    display: grid; align-items: center;
+    padding-block: 96px 120px;
+    color: #fff;
+    background:
+      linear-gradient(100deg, rgba(14,26,51,.97) 0%, rgba(14,26,51,.88) 42%, rgba(14,26,51,.45) 75%, rgba(14,26,51,.2) 100%),
+      url("images/hero.jpg") center / cover no-repeat,
+      var(--navy);
+    overflow: hidden;
+    position: relative;
+  }
+  /* 光の筋（斜めのライン） */
+  .hero::before, .hero::after {
+    content: ""; position: absolute; pointer-events: none;
+    width: 160%; height: 2px; left: -30%;
+    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+    transform: rotate(-12deg);
+    opacity: .55;
+  }
+  .hero::before { top: 22%; }
+  .hero::after { bottom: 18%; height: 1px; background: linear-gradient(90deg, transparent, var(--blue-light), transparent); }
+  .hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: center; position: relative; }
+  .hero .tag {
+    font-family: var(--latin); font-weight: 700; letter-spacing: 0.28em; font-size: 0.82rem;
+    color: var(--gold); margin: 0 0 22px;
+  }
+  .hero h1 {
+    font-size: clamp(2.3rem, 7.4vw, 4.4rem);
+    font-weight: 900;
+    line-height: 1.28;
+    margin: 0 0 18px;
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 24px rgba(0,0,0,.35);
+  }
+  .hero h1 .gold { background: linear-gradient(135deg, var(--gold-light), var(--sun)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .catch { font-size: clamp(1.05rem, 3.2vw, 1.35rem); font-weight: 700; margin: 0 0 26px; color: #e9eef7; }
+  .hero .points { list-style: none; padding: 0; margin: 0 0 36px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero .points li {
+    font-size: 0.86rem; font-weight: 700; padding: 4px 14px;
+    border: 1px solid rgba(232,200,119,.6); color: var(--gold-light); border-radius: 4px;
+    background: rgba(14,26,51,.4);
+  }
+  .hero-visual { position: relative; display: flex; align-items: flex-end; justify-content: center; }
+  .hero-visual .logo-card {
+    background: rgba(255,255,255,.96); border-radius: 18px; padding: 22px 26px;
+    width: min(280px, 70%); box-shadow: 0 24px 60px rgba(0,0,0,.35);
+    margin-bottom: 40px;
+  }
+  .hero-visual .machine {
+    width: 170px; margin-left: -28px; position: relative;
+    filter: drop-shadow(0 18px 30px rgba(0,0,0,.45));
+  }
+  .hero .area { font-size: 0.88rem; color: #b8c4da; margin-top: 22px; }
+  .scroll {
+    position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%);
+    font-family: var(--latin); font-size: 0.7rem; letter-spacing: 0.3em; color: #b8c4da;
+  }
+
+  /* お悩み */
+  .worries { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 36px 0 44px; }
+  .worries li {
+    background: #fff; border-left: 4px solid var(--blue);
+    padding: 16px 18px; font-weight: 700; border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(27,42,74,.06);
+    display: flex; gap: 10px; align-items: center;
+  }
+  .worries li::before { content: "✓"; color: var(--blue); font-weight: 900; }
+  .answer {
+    background: var(--navy); color: #fff; border-radius: 10px;
+    padding: 34px 36px; text-align: center;
+  }
+  .answer p { margin: 0; font-size: clamp(1.15rem, 3.6vw, 1.5rem); font-weight: 900; line-height: 1.7; }
+  .answer small { display: block; margin-top: 10px; font-weight: 500; font-size: 0.95rem; color: #c7d2e6; }
+
+  /* 筋膜とメディセル */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px; }
+  .panel {
+    background: #fff; border-radius: 10px; padding: 34px 32px;
+    box-shadow: 0 6px 24px rgba(27,42,74,.08);
+    border-top: 4px solid var(--blue);
+  }
+  .panel h3 { font-size: 1.35rem; font-weight: 900; margin: 0 0 14px; line-height: 1.5; }
+  .panel h3 small { display: block; font-family: var(--latin); font-size: 0.8rem; letter-spacing: 0.2em; color: var(--blue); }
+  .panel p { margin: 0 0 1em; }
+  .panel p:last-child { margin-bottom: 0; }
+  .machine-box {
+    display: grid; grid-template-columns: 210px 1fr; gap: 40px; align-items: center;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-3) 100%);
+    color: #fff; border-radius: 12px; padding: 44px 44px; margin-top: 28px;
+    position: relative; overflow: hidden;
+  }
+  .machine-box::after {
+    content: ""; position: absolute; width: 140%; height: 1px; left: -20%; top: 30%;
+    background: linear-gradient(90deg, transparent, var(--gold-light), transparent); transform: rotate(-14deg); opacity: .5;
+  }
+  .machine-box img { width: 190px; margin: 0 auto; filter: drop-shadow(0 16px 28px rgba(0,0,0,.5)); position: relative; z-index: 1; }
+  .machine-box h3 { font-family: var(--latin); font-size: clamp(1.6rem, 4.6vw, 2.2rem); margin: 0; color: var(--gold-light); letter-spacing: 0.06em; line-height: 1.2; }
+  .machine-box .sub { font-weight: 900; font-size: 1.1rem; margin: 6px 0 18px; }
+  .machine-box ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; position: relative; z-index: 1; }
+  .machine-box li { padding-left: 30px; position: relative; }
+  .machine-box li::before {
+    content: ""; position: absolute; left: 0; top: .55em; width: 16px; height: 16px; border-radius: 50%;
+    background: radial-gradient(circle, var(--gold-light) 0 35%, transparent 36%), rgba(232,200,119,.25);
+  }
+  .machine-box .note { font-size: 0.8rem; color: #aebbd3; margin-top: 18px; position: relative; z-index: 1; }
+
+  /* ゴルフケア */
+  .golf {
+    background:
+      linear-gradient(180deg, rgba(14,26,51,.93), rgba(14,26,51,.97)),
+      url("images/hero.jpg") center / cover no-repeat fixed,
+      var(--navy);
+    color: #e9eef7;
+  }
+  .golf .title {
+    font-family: var(--latin); font-weight: 700;
+    font-size: clamp(3rem, 12vw, 6rem); line-height: 1; letter-spacing: 0.06em;
+    margin: 0 0 18px;
+    background: linear-gradient(135deg, #f4dc9a, var(--gold) 55%, #a8812f);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .golf h2 { color: #fff; }
+  .rounds { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 44px 0; }
+  .round {
+    border: 1px solid rgba(232,200,119,.45); border-radius: 10px; padding: 32px 30px;
+    background: rgba(22,38,74,.7);
+  }
+  .round .when { font-family: var(--latin); font-weight: 700; color: var(--gold); letter-spacing: 0.2em; font-size: 0.85rem; }
+  .round h3 { font-size: 1.4rem; font-weight: 900; margin: 4px 0 14px; color: #fff; }
+  .round p { margin: 0; color: #c7d2e6; }
+  .signs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; list-style: none; padding: 0; margin: 20px 0 0; }
+  .signs li { background: rgba(232,200,119,.12); border: 1px solid rgba(232,200,119,.5); color: var(--gold-light); border-radius: 4px; padding: 6px 16px; font-weight: 700; font-size: 0.95rem; }
+  .golf-owner { margin-top: 40px; text-align: center; font-size: 1.05rem; }
+  .golf-owner strong { color: var(--gold-light); }
+
+  /* 選ばれる理由 */
+  .reasons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: reason; }
+  .reason { background: #fff; border-radius: 10px; padding: 34px 26px 30px; box-shadow: 0 6px 24px rgba(27,42,74,.08); position: relative; }
+  .reason::before {
+    counter-increment: reason; content: "0" counter(reason);
+    font-family: var(--latin); font-weight: 700; font-size: 2.6rem; line-height: 1;
+    color: var(--blue); display: block; margin-bottom: 12px;
+  }
+  .reason h3 { font-size: 1.15rem; font-weight: 900; margin: 0 0 10px; line-height: 1.55; }
+  .reason p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+
+  /* メニュー */
+  .menu {
+    max-width: 640px; margin: 0 auto;
+    background: #fff; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 10px 34px rgba(27,42,74,.12);
+  }
+  .menu-head { background: var(--navy); color: #fff; padding: 26px 32px; }
+  .menu-head .en { font-family: var(--latin); color: var(--gold); letter-spacing: 0.2em; font-size: 0.8rem; font-weight: 700; }
+  .menu-head h3 { margin: 2px 0 0; font-size: 1.5rem; font-weight: 900; }
+  .menu-body { padding: 30px 32px 34px; }
+  .menu-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 0 20px; border-bottom: 1px dashed #c9d6e8; }
+  .badge { display: inline-block; background: var(--blue); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 2px 12px; border-radius: 3px; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .menu-row .name { font-weight: 900; font-size: 1.15rem; line-height: 1.6; }
+  .menu-row .name small { display: block; font-weight: 500; font-size: 0.88rem; color: var(--ink-soft); }
+  .menu-row .price { font-family: var(--latin); font-weight: 700; font-size: clamp(2.2rem, 7vw, 3rem); color: var(--blue); white-space: nowrap; line-height: 1; }
+  .menu-row .price small { font-family: var(--gothic); font-size: 1rem; margin-left: 2px; }
+  .ticket { display: flex; justify-content: space-between; align-items: center; padding: 18px 0 4px; font-weight: 900; }
+  .ticket span:last-child { color: var(--blue); }
+  .menu .note { font-size: 0.85rem; color: var(--ink-soft); margin: 18px 0 0; line-height: 1.8; }
+
+  /* 施術の流れ */
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
+  .steps li { background: #fff; border-radius: 10px; padding: 26px 22px; box-shadow: 0 6px 24px rgba(27,42,74,.08); counter-increment: step; }
+  .steps li::before { content: "STEP " counter(step); display: block; font-family: var(--latin); font-weight: 700; color: var(--blue); letter-spacing: 0.14em; font-size: 0.85rem; margin-bottom: 6px; }
+  .steps strong { display: block; font-size: 1.08rem; margin-bottom: 6px; }
+  .steps span { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.8; display: block; }
+
+  /* オーナー */
+  .owner { display: grid; grid-template-columns: 300px 1fr; gap: 52px; align-items: start; }
+  .owner-photo { position: relative; }
+  .owner-photo img { width: 100%; border-radius: 10px; box-shadow: 0 18px 44px rgba(0,0,0,.35); }
+  .owner-photo::before {
+    content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 2px solid var(--gold); border-radius: 10px; z-index: -1;
+  }
+  .owner-photo-wrap { position: relative; z-index: 0; }
+  .owner-name { margin-top: 30px; font-weight: 900; font-size: 1.15rem; }
+  .owner-name small { display: block; font-family: var(--latin); color: var(--gold); letter-spacing: 0.2em; font-size: 0.85rem; }
+  .owner .prose p { color: #d6deec; }
+  .owner .quote { font-size: clamp(1.2rem, 3.8vw, 1.55rem); font-weight: 900; color: #fff; line-height: 1.7; margin: 0 0 1.2em; }
+  .profile { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 8px; }
+  .profile li { padding-left: 22px; position: relative; color: #d6deec; }
+  .profile li::before { content: ""; position: absolute; left: 0; top: .8em; width: 10px; height: 2px; background: var(--gold); }
+
+  /* よくある質問 */
+  .faq { max-width: 760px; margin: 0 auto; display: grid; gap: 14px; }
+  .faq details { background: #fff; border-radius: 8px; box-shadow: 0 4px 16px rgba(27,42,74,.07); }
+  .faq summary { cursor: pointer; padding: 20px 56px 20px 24px; font-weight: 900; list-style: none; position: relative; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before { content: "Q."; font-family: var(--latin); color: var(--blue); margin-right: 10px; }
+  .faq summary::after { content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--blue); }
+  .faq details[open] summary::after { content: "−"; }
+  .faq .a { padding: 0 24px 22px 56px; color: var(--ink-soft); position: relative; }
+  .faq .a::before { content: "A."; font-family: var(--latin); color: var(--gold); position: absolute; left: 24px; font-weight: 700; }
+
+  /* ご予約 */
+  .info { margin: 0 auto 40px; max-width: 640px; border-collapse: collapse; width: 100%; }
+  .info th, .info td { text-align: left; padding: 16px 8px; border-bottom: 1px solid #c9d6e8; vertical-align: top; }
+  .info th { width: 7em; color: var(--blue); font-weight: 900; white-space: nowrap; }
+  .info small { color: var(--ink-soft); }
+
+  /* 締め */
+  .closing { text-align: center; }
+  .closing .logo { width: min(260px, 70%); margin: 0 auto 34px; background: #fff; border-radius: 14px; padding: 18px 22px; }
+  .closing h2 { margin-bottom: 18px; }
+
+  footer { background: #0a1427; color: #8d9bb6; text-align: center; padding: 48px 24px 120px; font-size: 0.8rem; line-height: 1.9; }
+  footer .name { font-family: var(--latin); color: var(--gold); font-size: 1.4rem; letter-spacing: 0.08em; }
+
+  /* スマホで下に固定する予約ボタン */
+  .floating {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(14,26,51,.94); backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(232,200,119,.35);
+    display: none; gap: 10px;
+  }
+  .floating .btn { flex: 1; padding: 12px 8px; font-size: 0.9rem; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-visual { order: -1; justify-items: start; }
+    .hero-visual .logo-card { width: 220px; padding: 14px 18px; }
+    .hero-visual .machine { display: none; }
+    .two, .rounds { grid-template-columns: 1fr; }
+    .reasons { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .owner { grid-template-columns: 1fr; gap: 36px; }
+    .owner-photo-wrap { max-width: 280px; margin: 0 auto; }
+    .owner-name { text-align: center; }
+    .machine-box { grid-template-columns: 1fr; text-align: left; padding: 36px 26px; }
+    .machine-box img { width: 150px; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 15px; }
+    .wrap { padding-inline: 20px; }
+    section { padding-block: 72px; }
+    .hero { padding-block: 64px 96px; min-height: auto; }
+    .hero .buttons { display: none; }
+    .steps { grid-template-columns: 1fr; }
+    .panel { padding: 28px 22px; }
+    .menu-head, .menu-body { padding-inline: 22px; }
+    .answer { padding: 28px 22px; }
+    .golf { background-attachment: scroll, scroll, scroll; }
+    .floating { display: flex; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="line-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6c1.5-1.6 2-3.2 2-4.8C22 6.6 17.5 3 12 3z"/></symbol>
+  <symbol id="insta-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="cal-icon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5"/></symbol>
+</svg>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="tag">MEDICELL FASCIA CARE ／ GOLF CARE</p>
+        <h1>その痛み、<br><span class="gold">あきらめないで。</span></h1>
+        <p class="catch">マッサージしても、すぐ戻る。<br>その原因、筋膜かもしれません。</p>
+        <ul class="points">
+          <li>本格筋膜ケアマシン導入</li><li>ゴルフケア</li><li>男女OK</li><li>完全予約制</li>
+        </ul>
+        <div class="buttons">
+          <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+        </div>
+        <p class="area">千葉県成田市｜メディセル筋膜ケアのプライベートサロン</p>
+      </div>
+      <div class="hero-visual">
+        <div class="logo-card"><img src="images/logo.png" alt="Body Care moco" width="640" height="529"></div>
+        <img class="machine" src="images/medicell.png" alt="" width="434" height="800">
+      </div>
+    </div>
+  </div>
+  <span class="scroll">SCROLL</span>
+</header>
+
+<main>
+
+<!-- お悩み -->
+<section id="worries">
+  <div class="wrap narrow">
+    <p class="eyebrow">PROBLEM</p>
+    <h2>こんな痛み、<br>「ずっとこうだから」と<em>あきらめていませんか？</em></h2>
+    <ul class="worries">
+      <li>マッサージしても、すぐ戻る肩こり・首こり</li>
+      <li>朝起きると腰が痛い・長く座るとつらい</li>
+      <li>階段で膝がつらい・脚が重だるい</li>
+      <li>夕方になると脚がパンパン、足先が冷たい</li>
+      <li>強く揉まれると、翌日つらくなる</li>
+      <li>ゴルフの後半に崩れる・飛距離が落ちた</li>
+    </ul>
+    <div class="answer">
+      <p>表面をほぐしても戻るのは、<br><span class="gold">筋膜</span>が固まったままだから<br>かもしれません。</p>
+      <small>Body Care moco は、本格筋膜ケアマシン「メディセル」で、筋膜にしっかりアプローチします。</small>
+    </div>
+  </div>
+</section>
+
+<!-- 筋膜とメディセル -->
+<section id="medicell" style="background:#e8f0fa">
+  <div class="wrap">
+    <p class="eyebrow">FASCIA × MEDICELL</p>
+    <h2>痛みやこりの原因、<br><em>筋膜</em>に目を向ける。</h2>
+    <div class="two">
+      <div class="panel">
+        <h3><small>WHAT IS FASCIA</small>筋膜ってなに？</h3>
+        <p>筋膜（Fascia ＝ファシア）は、筋肉だけでなく、骨や内臓まで全身をくまなく包み込んでいる、ボディスーツのような膜です。身体の形を支えていることから「第2の骨格」とも呼ばれます。</p>
+        <p>同じ姿勢やクセ、スポーツでのくり返しの動きなどで筋膜が固まり、ねじれたり癒着したりすると、めぐりが滞り、痛みやこり、動かしにくさにつながることがあります。</p>
+      </div>
+      <div class="panel">
+        <h3><small>WHY MEDICELL</small>なぜメディセルなの？</h3>
+        <p>メディセルは、キネシオテープをヒントに生まれた筋膜ケアのマシンです。皮膚と筋膜を吸い上げて持ち上げ、固まった筋膜のねじれや癒着をほぐしていきます。</p>
+        <p>強く揉んだり押したりしないので、揉み返しが苦手な方にも。痛みのある部分だけでなく、<strong>全身の筋膜のつながり</strong>から見てケアします。</p>
+      </div>
+    </div>
+    <div class="machine-box">
+      <img src="images/medicell.png" alt="本格筋膜ケアマシン Medicell HYBRID" width="434" height="800" loading="lazy">
+      <div>
+        <h3>Medicell HYBRID</h3>
+        <p class="sub">本格筋膜ケアマシン、導入しています。</p>
+        <ul>
+          <li>さまざまなヘッドで、肩・腰・脚など部位に合わせて筋膜にアプローチ</li>
+          <li>揉まずに吸い上げてほぐすから、身体への負担が少ない</li>
+          <li>プロゴルファーをはじめ、多くのアスリートにも使われているマシンです</li>
+        </ul>
+        <p class="note">※メディセル（Medicell）は株式会社MJカンパニーの筋膜ケア機器です。アスリートの使用はメーカー資料によります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ゴルフケア -->
+<section id="golf" class="golf">
+  <div class="wrap">
+    <p class="title">GOLF CARE</p>
+    <h2>ゴルフ後の身体を、<br><em>本気でケアする。</em></h2>
+    <p class="lead">ゴルフは、同じ方向へのひねりを何度もくり返すスポーツ。腰・肩・肘・膝に負担がかかりやすく、筋膜もこわばりやすくなります。<br>スコアが伸びない原因は、スイングだけでなく、身体のこわばりにあるかもしれません。</p>
+    <div class="rounds">
+      <div class="round">
+        <span class="when">BEFORE THE ROUND</span>
+        <h3>ラウンド前のケア</h3>
+        <p>ストレッチ代わりに筋膜をほぐし、肩や股関節まわりを動かしやすい状態に。1番ホールから、しっかり回れる身体で。</p>
+      </div>
+      <div class="round">
+        <span class="when">AFTER THE ROUND</span>
+        <h3>ラウンド後のケア</h3>
+        <p>たくさん使った筋肉と筋膜をケアして、翌日に疲れを残しにくい身体へ。次のラウンドを、もっと楽しく。</p>
+      </div>
+    </div>
+    <p class="center" style="margin:0;font-weight:900;color:#fff">こんな方に</p>
+    <ul class="signs">
+      <li>後半になると崩れる</li><li>飛距離が落ちてきた</li><li>捻りが浅くなった</li>
+      <li>スイングで腰や肩が気になる</li><li>ゴルフ肘・膝の違和感</li><li>ラウンドの翌日が重い</li>
+    </ul>
+    <p class="golf-owner">オーナーの moco も、<strong>ゴルフが大好き</strong>です。<br>ゴルファーの「もっと楽しみたい」に、全力で向き合います。<br><small style="color:#aebbd3">ゴルフ以外のスポーツをされる方も、お気軽にどうぞ。</small></p>
+  </div>
+</section>
+
+<!-- 選ばれる理由 -->
+<section id="reason">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">REASON</p>
+      <h2>Body Care moco が<br><em>選ばれる理由</em></h2>
+    </div>
+    <div class="reasons">
+      <article class="reason">
+        <h3>本格筋膜ケアマシン<br>「Medicell HYBRID」</h3>
+        <p>手技だけでは届きにくい筋膜に、マシンでしっかりアプローチ。リラクゼーションではなく、痛みに向き合う本格的なボディケアです。</p>
+      </article>
+      <article class="reason">
+        <h3>痛いところだけでなく、<br>全身のつながりを見る</h3>
+        <p>腰がつらくても、お尻や太もも、背中の筋膜が関係していることも。カウンセリングで身体の状態を伺い、全身から整えます。</p>
+      </article>
+      <article class="reason">
+        <h3>23年のおもてなしと、<br>プライベートな空間</h3>
+        <p>オリエンタルランドで23年間培ったおもてなしの心で、おひとりおひとりに寄り添います。男女どなたでも、完全予約制のプライベートサロンです。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- メニュー -->
+<section id="menu" style="background:#e8f0fa">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">MENU</p>
+      <h2>メニュー・料金</h2>
+    </div>
+    <div class="menu">
+      <div class="menu-head">
+        <span class="en">MEDICELL FASCIA CARE</span>
+        <h3>メディセル筋膜ケア</h3>
+      </div>
+      <div class="menu-body">
+        <div class="menu-row">
+          <div class="name"><span class="badge">初回お試し</span><br>所要時間 90分<small>（施術 60分・カウンセリング込み）</small></div>
+          <div class="price">10,000<small>円</small></div>
+        </div>
+        <div class="ticket"><span>回数券</span><span>お得な回数券あり</span></div>
+        <p class="note">表示価格は税込です。<br>筋膜は、続けてケアすることで身体が変化を覚えやすくなります。回数券の詳細は、LINE または Instagram のDMでお気軽にお問い合わせください。無理な勧誘は一切ありません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 施術の流れ -->
+<section id="flow">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">FLOW</p>
+      <h2>施術の流れ</h2>
+    </div>
+    <ol class="steps">
+      <li><strong>ご予約・ご相談</strong><span>LINE または Instagram のDMで、ご希望の日時と気になるお悩みをお知らせください。</span></li>
+      <li><strong>カウンセリング</strong><span>お身体の状態や気になる部位、ゴルフやスポーツのこともじっくり伺います。</span></li>
+      <li><strong>メディセル施術</strong><span>筋膜を吸い上げてほぐしていきます。強く揉まれるような痛みはほとんどありません。</span></li>
+      <li><strong>アフターカウンセリング</strong><span>施術後の身体の変化を一緒に確認し、ご自宅でできるケアもお伝えします。</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- オーナー -->
+<section id="owner" class="dark">
+  <div class="wrap">
+    <p class="eyebrow">MESSAGE</p>
+    <h2>「目の前の人の痛みを、<br><em>少しでも軽くしたい。</em>」</h2>
+    <div class="owner">
+      <div class="owner-photo-wrap">
+        <div class="owner-photo"><img src="images/owner.jpg" alt="Body Care moco オーナー moco" width="760" height="916" loading="lazy"></div>
+        <p class="owner-name"><small>OWNER</small>moco</p>
+      </div>
+      <div class="prose">
+        <p>私は20年以上、リウマチの母の介護をしてきました。<br>痛みに苦しむ母の悲痛な叫びを、すぐそばで目の当たりにしてきました。</p>
+        <p class="quote">「目の前の人の痛みを、少しでも軽くしてあげたい」<br>「苦しみから、いち早く解放してあげたい」</p>
+        <p>その信念から、メディセルを使った筋膜ケアのプライベートサロンを開業しました。</p>
+        <p>身体が軽くなると、心も軽くなり、人生が動き出します。<br>mocoは、みんなを明るく照らす太陽のような存在でありたいと思っています。</p>
+        <p>心も身体もゴルフも、もっと楽に、もっと楽しく。<br>「ずっとこうだから」とあきらめていた痛みに、一緒に向き合いましょう。</p>
+        <ul class="profile">
+          <li>オリエンタルランドで23年間、おもてなしの現場に</li>
+          <li>リウマチの母を20年以上介護</li>
+          <li>ゴルフが大好き</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- よくある質問 -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Q &amp; A</p>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>痛くないですか？</summary>
+        <div class="a">筋膜を吸い上げてほぐすので、強く揉まれるような痛みはほとんどありません。強さは、お身体の状態に合わせて調整します。</div>
+      </details>
+      <details>
+        <summary>男性も受けられますか？</summary>
+        <div class="a">はい、男女どなたでもご利用いただけます。完全予約制のプライベートサロンなので、ほかのお客さまと顔を合わせることもありません。</div>
+      </details>
+      <details>
+        <summary>ゴルフの前後でも受けられますか？</summary>
+        <div class="a">はい。ラウンド前のケア、ラウンド後のケアのどちらもおすすめです。ご予約の際に、ラウンドの日程をお知らせください。</div>
+      </details>
+      <details>
+        <summary>どのくらいの間隔で通えばいいですか？</summary>
+        <div class="a">お身体の状態やご希望によって変わります。カウンセリングでお話を伺い、無理のないペースをご提案します。</div>
+      </details>
+      <details>
+        <summary>病院に通っているのですが、受けられますか？</summary>
+        <div class="a">当サロンの施術は医療行為ではありません。治療中の方や、強い痛み・しびれ・腫れが続く方、けがをした直後の方は、先に医療機関にご相談ください。ご不安な点は、ご予約前にお気軽にお尋ねください。</div>
+      </details>
+      <details>
+        <summary>場所はどこですか？</summary>
+        <div class="a">千葉県成田市のプライベートサロンです。詳しい場所は、ご予約が確定した方にお知らせします。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ご予約 -->
+<section id="reserve" style="background:#e8f0fa">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">RESERVATION</p>
+      <h2>ご予約・お問い合わせ</h2>
+    </div>
+    <table class="info">
+      <tr><th>場所</th><td>千葉県成田市<br><small>※プライベートサロンのため、詳しい場所はご予約確定後にお伝えします</small></td></tr>
+      <tr><th>営業時間</th><td>ご予約に合わせて施術します。<br>早朝・夜間、土日・祝日もご相談ください。</td></tr>
+      <tr><th>ご予約</th><td>LINE公式アカウント（@743rxmgo）<br>Instagram（@bodycaremoco_narita）のDM</td></tr>
+    </table>
+    <div class="center">
+      <div class="buttons">
+        <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
+        <a class="btn btn-outline-dark" href="https://moco0829-cloud.github.io/salondemoco/yoyaku/" target="_blank" rel="noopener"><svg><use href="#cal-icon"/></svg>空き状況を見る</a>
+        <a class="btn btn-outline-dark" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 締め -->
+<section class="closing dark">
+  <div class="wrap narrow">
+    <img class="logo" src="images/logo.png" alt="Body Care moco" width="640" height="529" loading="lazy">
+    <p class="eyebrow" style="justify-content:center">BODY CARE MOCO</p>
+    <h2>身体が軽くなると、<br><em>人生が動き出す。</em></h2>
+    <p class="lead" style="margin-bottom:36px">その痛み、ひとりで抱えず、まずはお気軽にご相談ください。</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn btn-gold" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
+      <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="name">Body Care moco</div>
+  メディセル筋膜ケア ｜ ゴルフケア<br>
+  〜人生を楽しむ身体を取り戻すサロン〜<br><br>
+  当サロンの施術は医療行為ではありません。<br>
+  症状が続く場合や気になることがある場合は、医療機関にご相談ください。<br><br>
+  &copy; Body Care moco
+</footer>
+
+<nav class="floating" aria-label="ご予約">
+  <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約</a>
+  <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+</nav>
+
+</body>
+</html>
