@@ -115,6 +115,7 @@
   .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.25); }
   .btn svg { width: 20px; height: 20px; flex: none; }
   .btn-line { background: #06c755; color: #fff; }
+  .btn-insta { background: linear-gradient(45deg, #f9ce34 0%, #fa7e1e 22%, #ee2a7b 50%, #b72fb5 75%, #6228d7 100%); color: #fff; }
   .btn-gold { background: linear-gradient(135deg, var(--gold-light), var(--gold)); color: var(--navy); }
   .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
   .btn-outline-dark { background: #fff; color: var(--ink); border: 1.5px solid #c9d6e8; }
@@ -142,7 +143,8 @@
   }
   .hero::before { top: 22%; }
   .hero::after { bottom: 18%; height: 1px; background: linear-gradient(90deg, transparent, var(--blue-light), transparent); }
-  .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; position: relative; }
+  .hero-wrap { max-width: 1200px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 24px; align-items: center; position: relative; }
   .hero .tag {
     font-family: var(--latin); font-weight: 700; letter-spacing: 0.28em; font-size: 0.82rem;
     color: var(--gold); margin: 0 0 22px;
@@ -163,16 +165,25 @@
     border: 1px solid rgba(232,200,119,.6); color: var(--gold-light); border-radius: 4px;
     background: rgba(14,26,51,.4);
   }
-  .hero-visual { position: relative; display: flex; align-items: flex-end; justify-content: center; }
+  /* ロゴは大きく右上、メディセルは左下に大きく。斜めに並べる */
+  .hero-visual { position: relative; height: 680px; }
   .hero-visual .logo-card {
-    flex: none; width: 290px;
+    position: absolute; top: 0; right: 0; z-index: 2;
+    width: min(370px, 64%);
     filter: drop-shadow(0 14px 30px rgba(0,0,0,.45));
-    margin-bottom: 40px;
   }
   .hero-visual .machine {
-    flex: none; width: 150px; margin-left: 14px; position: relative;
-    filter: drop-shadow(0 18px 30px rgba(0,0,0,.45));
+    position: absolute; left: -2%; bottom: 0; z-index: 1;
+    height: 400px; width: auto;
+    filter: drop-shadow(0 24px 36px rgba(0,0,0,.55));
   }
+  .hero-visual .machine-label {
+    position: absolute; left: calc(-2% + 250px); bottom: 40px; z-index: 2;
+    font-weight: 900; font-size: 1rem; color: #fff; letter-spacing: 0.08em; line-height: 1.6;
+    border-left: 3px solid var(--gold); padding-left: 12px;
+    text-shadow: 0 2px 10px rgba(0,0,0,.6);
+  }
+  .hero-visual .machine-label small { display: block; font-family: var(--latin); color: var(--gold-light); font-size: 0.8rem; letter-spacing: 0.16em; }
   .hero .area { font-size: 0.88rem; color: #b8c4da; margin-top: 22px; }
   .scroll {
     position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%);
@@ -347,9 +358,10 @@
 
   @media (max-width: 860px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-visual { order: -1; justify-items: start; }
-    .hero-visual .logo-card { width: 240px; }
-    .hero-visual .machine { display: none; }
+    .hero-visual { order: -1; height: 390px; }
+    .hero-visual .logo-card { width: 215px; }
+    .hero-visual .machine { left: 0; height: 215px; }
+    .hero-visual .machine-label { display: none; }
     .two, .rounds { grid-template-columns: 1fr; }
     .reasons { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr 1fr; }
@@ -384,7 +396,7 @@
 
 <!-- ヒーロー -->
 <header class="hero">
-  <div class="wrap">
+  <div class="wrap hero-wrap">
     <div class="hero-grid">
       <div>
         <p class="tag">MEDICELL FASCIA CARE ／ GOLF CARE</p>
@@ -395,13 +407,14 @@
         </ul>
         <div class="buttons">
           <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
-          <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+          <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
         </div>
         <p class="area">千葉県成田市｜メディセル筋膜ケアのプライベートサロン</p>
       </div>
       <div class="hero-visual">
         <div class="logo-card"><img src="images/logo.webp" alt="Body Care moco" width="720" height="674"></div>
-        <img class="machine" src="images/medicell.webp" alt="" width="434" height="800">
+        <img class="machine" src="images/medicell.webp" alt="本格筋膜ケアマシン Medicell HYBRID" width="434" height="800">
+        <p class="machine-label"><small>MEDICELL HYBRID</small>本格筋膜ケアマシン導入</p>
       </div>
     </div>
   </div>
@@ -632,7 +645,7 @@
       <div class="buttons">
         <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
         <a class="btn btn-outline-dark" href="https://moco0829-cloud.github.io/salondemoco/yoyaku/" target="_blank" rel="noopener"><svg><use href="#cal-icon"/></svg>空き状況を見る</a>
-        <a class="btn btn-outline-dark" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+        <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
       </div>
     </div>
   </div>
@@ -647,7 +660,7 @@
     <p class="lead" style="margin-bottom:36px">その痛み、ひとりで抱えず、まずはお気軽にご相談ください。</p>
     <div class="buttons" style="justify-content:center">
       <a class="btn btn-gold" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約・相談</a>
-      <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+      <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
     </div>
   </div>
 </section>
@@ -665,7 +678,7 @@
 
 <nav class="floating" aria-label="ご予約">
   <a class="btn btn-line" href="https://line.me/R/ti/p/@743rxmgo" target="_blank" rel="noopener"><svg><use href="#line-icon"/></svg>LINEで予約</a>
-  <a class="btn btn-outline" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
+  <a class="btn btn-insta" href="https://www.instagram.com/bodycaremoco_narita/" target="_blank" rel="noopener"><svg><use href="#insta-icon"/></svg>Instagram</a>
 </nav>
 
 </body>
